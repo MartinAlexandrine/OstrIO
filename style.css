@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  
+  
+  font-size: 16px;
+}
+
+.topbar {
+  background-color: #ceddf7;
+  font-family: "Lato, sans-serif";
+  color: #151E32;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: 700;
+  flex-wrap: wrap;
+  
+}
+.topbar__img {
+  width: 60px;
+}
+.topbar__logo {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.topbar h1 {
+  font-size: 4em;
+}
+.topbar__nav {
+  margin-right: 20px;
+}
+.topbar__link {
+  color: #151E32;
+  padding: 5px 10px;
+}
+.topbar__link--active {
+  font-weight: 900;
+  border-bottom: #297c25 solid 2px;
+}
+.topbar__link:hover {
+  border-bottom: #297c25 solid 2px;
+  font-size: 1.1em;
+}/*# sourceMappingURL=style.css.map */
+
+.slider{
+  width: 70%;
+  margin: 100px auto 0;
+  height: 300px;
+  position: relative;
+  
+}
+
+.cont-slides{
+  width: 100%;
+  height: 100%;
+}
+.col-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.slider-text{
+  flex:1
+}
+
+
+
+.slider img{
+  width: 55%;
+  height: auto;
+  
+}
+
+.contain-slides{
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.commandes{
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.commandes button{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px #ffffff solid;
+  background-color: #ffffff;
+  outline: none;
+  
+}
+
+.left-button{
+  
+  top:50%;
+  transform: translate(-150%, -50%);
+  
+  left: 5px;
+}
+
+.right-button{
+  right: 5px;
+  top:50%;
+  transform: translate(150%, -50%);
+  
+}
+
+.cercles{
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cercle{
+  width: 5%;
+  height: 15%;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #333333;
+}
+
+.active-cercle{
+  background-color: #333333;
+}
+
+.active{
+  opacity: 1!important;
+}
+
+
+
